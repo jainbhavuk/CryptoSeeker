@@ -6,16 +6,13 @@ import { useNavigate } from "react-router-dom";
 const Prices = () => {
 
   //Last Update
-  const lastUpdateFun=()=>{
-    <div>Last Updated At</div>
-  }
 
   const navigate = useNavigate();
   //Back To Home
   const backToHomePage = () => {
     navigate("/");
   };
-  const [lastUpdate, updateDate] = useState("");
+  
   const [result, updateRes] = useState([]);
   const getList = async () => {
     const data = await fetch(
