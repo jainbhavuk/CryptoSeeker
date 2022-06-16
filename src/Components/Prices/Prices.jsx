@@ -21,12 +21,12 @@ const Prices = () => {
     const res = await data.json();
     updateRes(res);
     //console.log(res);
-    let day = res[0];
-    let date = day.last_updated;
+    // let day = res[0];
+    // let date = day.last_updated;
 
-    let trimDate = date.slice(0, 10);
+    //let trimDate = date.slice(0, 10);
 
-    updateDate(trimDate);
+    //updateDate(trimDate);
   };
 
   useEffect(() => {
