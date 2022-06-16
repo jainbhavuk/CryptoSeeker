@@ -1,0 +1,69 @@
+.heading{
+    background-color: tomato;
+    color: white;
+    font-size: 25px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    margin-top: 10px;
+    font-weight: 600;
+    margin-bottom: -40px;
+}
+.img-box{
+    height:150px;
+    width: 150px;
+}
+.outer-div
+{
+    margin: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.dataBox
+{
+    width: 250px;
+    height: 280px;
+    background-color:snow;
+    margin-top: 20px;
+    padding: 10px;
+    
+}
+.coinName{
+    font-size: 30px;
+    margin-top: 5px;
+}
+.coinPrice{
+    font-size: 25px;
+    margin-top: 5px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    width: 60%;
+}
+
+.footer
+{
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.backBtn{
+    justify-self: center;
+    
+    width: 30%;
+    height: 80%;
+    font-size: 30px;
+}
