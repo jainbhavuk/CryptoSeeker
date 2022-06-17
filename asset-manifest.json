@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/CryptoSeeker/static/css/main.fd5a4c35.css",
+    "main.js": "/CryptoSeeker/static/js/main.07a95430.js",
+    "static/js/787.011495d7.chunk.js": "/CryptoSeeker/static/js/787.011495d7.chunk.js",
+    "index.html": "/CryptoSeeker/index.html",
+    "main.fd5a4c35.css.map": "/CryptoSeeker/static/css/main.fd5a4c35.css.map",
+    "main.07a95430.js.map": "/CryptoSeeker/static/js/main.07a95430.js.map",
+    "787.011495d7.chunk.js.map": "/CryptoSeeker/static/js/787.011495d7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fd5a4c35.css",
+    "static/js/main.07a95430.js"
+  ]
+}
