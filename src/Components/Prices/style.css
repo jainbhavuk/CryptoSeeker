@@ -1,16 +1,17 @@
 .heading{
-    background-color: tomato;
+    background-color: black;
     color: white;
     font-size: 25px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 10px;
-    margin-top: 10px;
+    margin-top: 2%;
     font-weight: 600;
     margin-bottom: -40px;
 }
 .img-box{
     height:150px;
     width: 150px;
+
 }
 .outer-div
 {
@@ -21,15 +22,18 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
+    /* background-color: black; */
 }
+
 .dataBox
 {
-    width: 250px;
-    height: 280px;
-    background-color:snow;
+    
+    width: 300px;
+    height: 300px;
     margin-top: 20px;
-    padding: 10px;
+    /* Padding & bgcolor getting applied */
+    padding: 10px; 
+    background-color: black;
     
 }
 .coinName{

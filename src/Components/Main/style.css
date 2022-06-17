@@ -1,126 +1,118 @@
-
-.outer-box{    
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    margin-top: 0.5rem;
-    
+.outer-box {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 0.5rem;
 }
-.inner-box{
-    border-radius: 0.5rem;
-    color: white;
-    font-size: 0.5rem;
-    border: 3px solid black;
+.inner-box {
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 0.5rem;
+  border: 3px solid black;
+}
+.textInp {
+  color: white !important;
+  margin: 10px;
+  font-size: small;
+}
+.inp-box {
+  border-radius: 5px;
+  width: 70%;
+  color: black;
+  padding: 10px;
+  background-color: white;
+  border: none;
+  height: 50px;
+  font-size: 30px;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.inp-btn {
+  width: 40%;
+  height: 15%;
+  padding: 10px;
+  margin: 10px;
+  font-size: 15px;
+}
+.mybtn {
+  border: none;
+  border-radius: 3px;
+  margin-top: 5%;
+  width: 40%;
+  height: 13%;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.mybtn:hover {
+  background-color: tomato;
+  color: white;
+}
+.mybtn2 {
+  width: 50%;
+  height: 20%;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+  border-radius: 3px;
+  padding: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: none;
+  font-weight: 500;
+}
+.mybtn2:hover {
+  background-color: #ec3333;
+  color: white;
+}
+.results-box {
+  display: flex;
+  justify-content: center;
+}
+.inner-results {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  border-radius: 3px;
+  box-shadow: none;
+  padding: 20px;
+  margin-top: 8%;
+  height: 40%;
+  background-color: tomato;
+  width: 80%;
+  color: white;
+  font-weight: 600;
+  display: none;
+}
+.inner-results h1{
+  font-size: 40px;
   
 }
-.textInp
-{
-    color:white !important;
-    margin: 10px;
-    font-size: small;
+.dataBox {
+  background-color: bisque;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 300px;
+  border-radius: 5px;
+  border: 1px solid black;
 }
-.inp-box{
-    border-radius: 5px;
-    width: 70%;
-    color: black;
-    padding: 10px;
-    background-color: white;
-    border: none;
-    height: 50px;
-    font-size: 30px;
-    text-align: center;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.inp-btn{
-    width:40%;
-    height: 15%;
-    padding: 10px;
-    margin:10px;
-    font-size: 15px;
-    
-}
-.mybtn
-{
-     border: none;
-     border-radius: 3px;
-     margin-top: 5%;
-     width: 40%;
-     height: 13%;
-     background-color: black;
-     color: white;
-     font-size: 30px;
-     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.mybtn:hover{
-    background-color: tomato;
-    color: white;
-}
-.mybtn2{
+
+@media screen and (max-device-width: 640px) {
+  .inner-box {
+    width: 200px;
+    height: 300px;
+  }
+  .mybtn2 {
     width: 50%;
     height: 20%;
     background-color: black;
     color: white;
-    font-size: 25px;
+    font-size: 15px;
     border-radius: 3px;
-    padding: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border: none;
-    font-weight: 500;
-}
-.mybtn2:hover{
-    background-color: #ec3333;
-    color:white;
-}
-.results-box{
-  
-display: flex;
-justify-content: center;
-}
-.inner-results{
-    border-radius: 2px;
-    box-shadow: none;
-    padding: 3px;
-    margin-top: 10%;
-    height: 30%;
-    background-color: #ff4d4d;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    width:70%;
-    color: white;
-    font-weight: 600;
-    font-size: 25px;
-    
-
-}
-
-.dataBox{
-    background-color: bisque;
-    color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 250px;
-    height: 300px;
-    border-radius: 5px;
-    border: 1px solid black;
-}
-
-@media screen and (max-device-width: 640px)
-{
-    .inner-box{
-        width: 200px;
-        height: 300px;
-    }
-    .mybtn2{
-        width: 50%;
-        height: 20%;
-        background-color: black;
-        color: white;
-        font-size: 15px;
-        border-radius: 3px;
-        padding: 5px;
-      
-    }
+    padding: 5px;
+  }
 }

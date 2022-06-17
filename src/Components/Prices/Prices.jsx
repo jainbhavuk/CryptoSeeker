@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "../Prices/style.css";
 
 import { useNavigate } from "react-router-dom";
 
 const Prices = () => {
-
   //Last Update
 
   const navigate = useNavigate();
@@ -12,7 +11,7 @@ const Prices = () => {
   const backToHomePage = () => {
     navigate("/");
   };
-  
+
   const [result, updateRes] = useState([]);
   const getList = async () => {
     const data = await fetch(
@@ -20,26 +19,14 @@ const Prices = () => {
     );
     const res = await data.json();
     updateRes(res);
-    //console.log(res);
-    // let day = res[0];
-    // let date = day.last_updated;
-
-    //let trimDate = date.slice(0, 10);
-
-    //updateDate(trimDate);
+    
   };
-
-  useEffect(() => {
-    getList();
-  }, []);
+getList();
   return (
     <>
       <div className="heading">
         Top 10 Crypto Currencies By Market Cap (All Prices Are In INR)
       </div>
-
- 
-   
 
       <div className="outer-div">
         {result.map((data) => (
