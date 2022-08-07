@@ -84,9 +84,8 @@
   font-weight: 600;
   display: none;
 }
-.inner-results h1{
+.inner-results h1 {
   font-size: 40px;
-  
 }
 .dataBox {
   background-color: bisque;
@@ -103,8 +102,8 @@
 
 @media screen and (max-device-width: 640px) {
   .inner-box {
-    width: 200px;
-    height: 300px;
+    width: 100px;
+    height: 200px;
   }
   .mybtn2 {
     width: 50%;
@@ -116,3 +115,4 @@
     padding: 5px;
   }
 }
+

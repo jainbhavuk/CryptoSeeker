@@ -1,5 +1,6 @@
 import React from "react";
 // import Button from "../Button/Button";
+import { Button } from "@mui/material";
 import Box from "@mui/material/Box";
 
 import { Container } from "@mui/system";
@@ -28,7 +29,7 @@ const Main = () => {
     );
     let data = await res.json();
 
-    let p = data[`${input}`];
+    var p = data[`${input}`];
     let coin_price = p.inr;
     updatePrice(coin_price);
     let disp = document.getElementsByClassName("inner-results");
@@ -54,11 +55,24 @@ const Main = () => {
               className="inp-box"
               placeholder="Enter Coin Name (Eg. bitcoin)"
               onChange={handleChange}
+              style={{border:"1px solid black"}}
             ></input>
           </div>
-           <button onClick={handleClick} className='mybtn'>Check Price!</button> 
+          {/* <button onClick={handleClick} className="mybtn">
+            Check Price!
+          </button> */}
 
           {/* <Button onClickFun={handleClick} value="Click Me"></Button> */}
+
+          <Button
+            variant="contained"
+            onClick={handleClick}
+            style={{ fontSize: "30px", marginTop: "25px", width: "5rem" }}
+          >
+            {" "}
+            Check Price!{" "}
+          </Button>
+
           <div className="results-box">
             <div className="inner-results">
               <h1 className="price-inr" id="price-inr">
@@ -72,7 +86,23 @@ const Main = () => {
         onClickFun={goToPrices}
         value="Check Out The Top 10 Cryptocurrencies!"
       ></Button> */}
-      <button onClick={goToPrices} className='mybtn2'>Check Out The Top 10 Cryptocurrencies!</button>
+      {/* <button onClick={goToPrices} className="mybtn2"> */}
+      <Button
+        variant="contained"
+        onClick={goToPrices}
+        style={{
+          backgroundColor: "black",
+          color: "white",
+          width: "60%",
+          fontSize: "25px",
+          marginTop: "10px",
+          padding: "5px",
+        }}
+      >
+        Check Out The Top 10 Cryptocurrencies!
+      </Button>
+
+      {/* </button> */}
     </Container>
   );
 };

@@ -1,9 +1,9 @@
-import styles from "./styles";
+
 import React from "react";
-//import './style.js';
+import './styles.css';
 const Button = (props) => {
   return (
-    <button onClick={props.onClickFun} className={styles.btnstyle}>
+    <button onClick={props.onClickFun} className=".btnstyle">
       {props.value}
     </button>
   );

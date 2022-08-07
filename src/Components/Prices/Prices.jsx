@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import "../Prices/style.css";
 
 import { useNavigate } from "react-router-dom";
-
+import { Button } from "@mui/material";
 const Prices = () => {
   //Last Update
-
+  
   const navigate = useNavigate();
   //Back To Home
   const backToHomePage = () => {
@@ -19,15 +19,17 @@ const Prices = () => {
     );
     const res = await data.json();
     updateRes(res);
-    
   };
-getList();
+ 
+  getList();
   return (
     <>
       <div className="heading">
         Top 10 Crypto Currencies By Market Cap (All Prices Are In INR)
       </div>
-
+      
+        
+      
       <div className="outer-div">
         {result.map((data) => (
           <div className="dataBox">
@@ -37,11 +39,10 @@ getList();
           </div>
         ))}
       </div>
-      <div className="footer">
-        <button onClick={backToHomePage} className="backBtn">
-          Back To Home!
-        </button>
-      </div>
+     
+        <Button variant = "contained"  onClick={backToHomePage}
+        style={{padding:"10px", fontSize:"25px", width:"30%", backgroundColor:"black"}}
+        > Back To Home!</Button>
     </>
   );
 };
